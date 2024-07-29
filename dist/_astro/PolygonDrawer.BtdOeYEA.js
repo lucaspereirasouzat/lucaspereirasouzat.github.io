@@ -1,0 +1,1 @@
+import{P as n}from"./PolygonDrawerBase.ClCZ2wjJ.js";import"./sparkTitle.DCU_Odjx.js";import"./cn.Bh4i3_zX.js";import"./index.NEDEFKed.js";import"./motion.DhRAmCJf.js";const o=3.5,s=2.66,a=3;class l extends n{getCenter(t,e){return{x:-e/(t.sides/o),y:-e/(s/o)}}getSidesData(t,e){const r=t.sides;return{count:{denominator:1,numerator:r},length:e*s/(r/a)}}}export{l as PolygonDrawer};

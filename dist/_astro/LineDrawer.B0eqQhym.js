@@ -1,0 +1,1 @@
+import{_ as a}from"./sparkTitle.DCU_Odjx.js";import"./cn.Bh4i3_zX.js";import"./index.NEDEFKed.js";import"./motion.DhRAmCJf.js";const e=1;class c{async draw(r){const{drawLine:t}=await a(async()=>{const{drawLine:i}=await import("./Utils.Buh5Z1HD.js");return{drawLine:i}},[]);t(r)}getSidesCount(){return e}}export{c as LineDrawer};

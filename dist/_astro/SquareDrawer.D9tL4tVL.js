@@ -1,0 +1,1 @@
+import{_ as e}from"./sparkTitle.DCU_Odjx.js";import"./cn.Bh4i3_zX.js";import"./index.NEDEFKed.js";import"./motion.DhRAmCJf.js";const o=4;class u{async draw(r){const{drawSquare:t}=await e(async()=>{const{drawSquare:a}=await import("./Utils.Dt3wnDmh.js");return{drawSquare:a}},[]);t(r)}getSidesCount(){return o}}export{u as SquareDrawer};

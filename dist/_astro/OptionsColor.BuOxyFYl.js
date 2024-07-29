@@ -1,0 +1,1 @@
+import{d as l,i as o}from"./sparkTitle.DCU_Odjx.js";class s{constructor(){this.value=""}static create(r,e){const i=new s;return i.load(r),e!==void 0&&(l(e)||o(e)?i.load({value:e}):i.load(e)),i}load(r){r?.value!==void 0&&(this.value=r.value)}}export{s as O};

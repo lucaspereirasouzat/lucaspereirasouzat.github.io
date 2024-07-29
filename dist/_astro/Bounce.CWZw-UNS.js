@@ -1,0 +1,1 @@
+import{aa as l,ab as i,H as n}from"./sparkTitle.DCU_Odjx.js";import"./cn.Bh4i3_zX.js";import"./index.NEDEFKed.js";import"./motion.DhRAmCJf.js";const c=e=>{e.collisionMaxSpeed===void 0&&(e.collisionMaxSpeed=n(e.options.collisions.maxSpeed)),e.velocity.length>e.collisionMaxSpeed&&(e.velocity.length=e.collisionMaxSpeed)};function d(e,o){l(i(e),i(o)),c(e),c(o)}export{d as bounce};
