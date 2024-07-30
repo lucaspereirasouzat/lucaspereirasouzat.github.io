@@ -6,8 +6,8 @@ import react from '@astrojs/react';
 // https://astro.build/config
 export default defineConfig({
   
-  site: "https://Warmachine13.github.io",
-  base: "/",
+  site: "https://lucaspereirasouzat.github.io",
+  base: "/dist",
   integrations: [react(), tailwind()],
   vite: {
     
