@@ -1,13 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { TextGenerateEffect } from "@/components/TextGenerative";
-import { ThreeDCardDemo } from "@/components/card3d";
+import { PortifolioCard } from "@/components/card3d";
 import { SparklesPreview } from "@/components/sparkTitle";
 import { Vortex } from "@/components/vortext";
 import { WobbleCard } from "@/components/wobble-card";
-
+import "@/styles/global.css";
 import { TypewriterEffectSmooth } from "@/components/typewriter-effect";
 import { Image } from "astro:assets";
+import TechCards from "@/components/tech-list";
+import ParallaxSection from "@/components/scroll-animation";
 
 const words = [
   {
@@ -32,6 +34,69 @@ const words = [
 const someProps = {
   count: 0,
 };
+
+const technologyCards = [
+  {
+    title: "Frontend moderno",
+    description:
+      "React, Next.js e TypeScript para interfaces performáticas, reutilizáveis e fáceis de evoluir.",
+    image: "/linear.webp",
+    alt: "Frontend stack",
+    containerClassName:
+      "col-span-1 lg:col-span-2 h-full bg-zinc-900 min-h-[420px] lg:min-h-[320px] border border-zinc-800",
+    imageClassName:
+      "absolute -right-4 lg:-right-[25%] grayscale filter -bottom-10 object-contain rounded-2xl opacity-80",
+  },
+  {
+    title: "Backend e integrações",
+    description:
+      "Node.js, Express, Kafka e Redis para APIs robustas, mensageria e baixa latência em produção.",
+    image: "/linear.webp",
+    alt: "Backend stack",
+    containerClassName:
+      "col-span-1 bg-zinc-900 min-h-[320px] border border-zinc-800",
+    imageClassName:
+      "absolute -right-6 -bottom-8 object-contain rounded-2xl opacity-70 h-52 w-52",
+  },
+  {
+    title: "DevOps e qualidade",
+    description:
+      "Docker, Kubernetes e Jest para pipeline confiável, deploy contínuo e qualidade de código consistente.",
+    image: "/linear.webp",
+    alt: "DevOps stack",
+    containerClassName:
+      "col-span-1 lg:col-span-3 bg-zinc-900 min-h-[420px] lg:min-h-[360px] xl:min-h-[320px] border border-zinc-800",
+    imageClassName:
+      "absolute -right-8 md:-right-[20%] lg:-right-[10%] -bottom-12 object-contain rounded-2xl opacity-75",
+  },
+];
+
+const socialLinks = [
+  {
+    label: "Instagram",
+    href: "https://instagram.com/lucaspereirasouzat",
+  },
+  {
+    label: "GitHub",
+    href: "https://github.com/lucaspereirasouzat",
+  },
+  {
+    label: "LinkedIn",
+    href: "https://linkedin.com/in/lucas-pereira-511292142",
+  },
+  // {
+  //   label: "Mastodon",
+  //   href: "https://mastodon.social/@SEU_USUARIO",
+  // },
+  {
+    label: "Facebook",
+    href: "https://facebook.com/banasplit78",
+  },
+  {
+    label: "Email",
+    href: "mailto:lucaspereiradesouzat@gmail.com",
+  },
+];
 ---
 
 <Layout title="Welcome to Astro.">
@@ -99,17 +164,17 @@ const someProps = {
             <div
               class="flex flex-col gap-5 text-center w-full justify-center align-middle"
             >
-              <Image
+              <!-- <Image
                 alt={"profile"}
                 width={100}
                 height={100}
                 class="rounded-full bg-gray-50 h-52 w-56 mx-auto"
                 src="/public/profile.jpg"
-              />
+              /> -->
               <div
                 class="flex flex-col gap-3 align-middle justify-center text-center"
               >
-                <SparklesPreview client:only="react" />
+                <!-- <SparklesPreview client:only="react" /> -->
                 <TextGenerateEffect
                   client:only="react"
                   words="Lucas Pereira de Souza"
@@ -129,342 +194,223 @@ const someProps = {
                   Senior Full Stack Web Developer (React, Nodejs)
                 </p>
               </div>
-              <a
+              <!-- <a
                 href="#"
                 class="bg-gray-50 mx-auto w-32 text-center rounded-md p-2 border border-1 border-gray-100 hover:bg-white"
                 >Hire me</a
-              >
+              > -->
             </div>
           </div>
         </div>
       </Vortex>
     </div>
     <!-- main content -->
-    <main>
-      <!-- <section class="p-20">
-        <div class="container mx-auto">
-          <div class="flex justify-center">
-            <div class="flex flex-col gap-5 text-center">
+    <main class="w-full">
+      <!-- about me -->
+      <section id="about" class="bg-black shadow-xl w-full p-10">
+        <ParallaxSection client:load>
+          <div>
+            <div class="sm:columns-2">
               <Image
-                alt={"profile"}
                 width={100}
                 height={100}
-                class="rounded-full bg-gray-50 h-52 w-56 mx-auto"
-                src="/public/profile.jpg"
+                alt="te"
+                class="sm:w-1/3 mb-10 sm:mb-0"
+                src="https://media.licdn.com/dms/image/v2/D4D03AQGv3E4OYbJhnw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1727266556771?e=1762387200&v=beta&t=Btr7rpRXIm1bK913kl97mZqr1BpLMawy73XtI0BvYIQ"
               />
-              <div class="flex flex-col gap-3">
-                <SparklesPreview client:only="react" />
-                <TextGenerateEffect
-                  client:only="react"
-                  words="Lucas Pereira de Souza"
-                />
-
-                <TypewriterEffectSmooth client:only="react" words={words} />
-
-                <div class="space-y-2">
-                  <p
-                    class="max-w-[600px] text-zinc-200 md:text-xl dark:text-zinc-100 mx-auto"
-                  >
-                    Join us and take control of your inbox. Fast, secure, and
-                    designed for modern life.
-                  </p>
-                </div>
-                <p class="text-gray-500 text-sm shadow-xl drop-shadow-xl">
-                  Senior Full Stack Web Developer (React, Nodejs)
+              <div>
+                <h2 class="text-bold text-2xl mb-3">
+                  Full Stack Web Developer
+                </h2>
+                <p class="mb-5 text-sm text-gray-400">
+                  Providing web solutions
+                </p>
+                <p class="text-gray-500 text-justify leading-10">
+                  Sou Desenvolvedor Full-Stack, graduado em Análise de Sistemas,
+                  com ampla experiência em tecnologias modernas e um forte
+                  alinhamento com a filosofia de Código Aberto, tão valorizada
+                  pela comunidade tecnológica. Minha atuação está centrada na
+                  linguagem de programação JavaScript, com proficiência em
+                  frameworks e bibliotecas de destaque, como ReactJS, Next.js,
+                  React Native, AdonisJS e Express. Possuo conhecimentos em
+                  sistemas de mensageria distribuída com Kafka, automação de
+                  testes utilizando Jest, e orquestração de contêineres através
+                  de Kubernetes. Minha experiência se estende também ao uso de
+                  bancos de dados relacionais e não-relacionais, como Postgres,
+                  MongoDB e Redis, o que me permite lidar com diversas
+                  arquiteturas de armazenamento de dados. Além da prática
+                  técnica, sou um entusiasta de princípios de engenharia de
+                  software de alta qualidade, sendo familiar com as diretrizes
+                  apresentadas em obras consagradas como Clean Code,
+                  Domain-Driven Design (DDD) e Refatoração. Esses conhecimentos
+                  me capacitam a desenvolver soluções robustas, escaláveis e de
+                  fácil manutenção, sempre priorizando a clareza e a eficiência
+                  no código. Minha carreira é pautada por uma abordagem proativa
+                  e colaborativa, sempre em busca de excelência técnica e
+                  inovação.
                 </p>
               </div>
-              <a
-                href="#"
-                class="bg-gray-50 mx-auto w-32 text-center rounded-md p-2 border border-1 border-gray-100 hover:bg-white"
-                >Hire me</a
-              >
             </div>
           </div>
-        </div>
-      </section> -->
-
-      <div
-        class="relative flex h-full w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg border bg-background px-40 pb-40 pt-8 md:pb-60 md:shadow-xl"
-      >
-        <span
-          class="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10"
-        >
-          Globe
-        </span>
-        <div
-          class="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_200%,rgba(0,0,0,0.2),rgba(255,255,255,0))]"
-        >
-        </div>
-      </div>
-
-      <!-- about me -->
-      <section id="about" class="sm:p-10 lg:p-20 bg-black shadow-xl">
-        <div class="container mx-auto">
-          <div class="sm:columns-2">
-            <Image
-              width={100}
-              height={100}
-              alt="te"
-              class="sm:w-1/2 mb-10 sm:mb-0"
-              src="https://rabiulislam.dev/documents/images/portfolio/user-full-stack-development-rabiul-islam.png"
-            />
-            <div>
-              <h2 class="text-bold text-2xl mb-3">Full Stack Web Developer</h2>
-              <p class="mb-5 text-sm text-gray-400">Providing web solutions</p>
-              <p class="text-gray-500 text-justify leading-10">
-                Hello there! I'm a full stack web developer, and I'm very
-                passionate and dedicated to my work. With more than 5 years of
-                experience as a professional web developer, With this time
-                period I have acquired the skills and knowledge necessary to
-                make your project a success. I enjoy every step of the
-                development process, from discussion and collaboration.
-              </p>
-            </div>
-          </div>
-        </div>
+        </ParallaxSection>
       </section>
 
-      <!-- services -->
-      <!-- <section id="services" class="sm:p-10 lg:p-20 p-5">
-        <div class="sm:container mx-auto">
-          <h2 class="text-center text-4xl font-bold pt-10 sm:pt-0 pb-10">
-            Services
-          </h2>
-          <div class="sm:grid grid-cols-2">
-            <div
-              class="sm:p-10 p-5 bg-gray-50 sm:me-5 mb-10 rounded-md hover:shadow-md"
-            >
-              <h3 class="text-xl mb-5 font-bold">Web Design</h3>
-              <p class="leading-10 text-gray-500 text-justify">
-                As a dedicated web design professional, I bring a creative and
-                strategic approach to crafting visually stunning and
-                user-centric websites. With a keen eye for aesthetics and a
-                commitment to delivering exceptional user experiences, my goal
-                is to translate your brand identity into a captivating online
-                presence.
-              </p>
-            </div>
-
-            <div
-              class="sm:p-10 p-5 bg-gray-50 sm:me-5 mb-10 rounded-md hover:shadow-md"
-            >
-              <h3 class="text-xl mb-5 font-bold">Web Development</h3>
-              <p class="leading-10 text-gray-500 text-justify">
-                As a seasoned web development professional, I offer
-                comprehensive and tailored services to meet the diverse needs of
-                businesses seeking a strong online presence. With a rich
-                background in both front-end and back-end technologies, I
-                specialize in crafting visually appealing and highly functional
-                websites and web applications.
-              </p>
-            </div>
-
-            <div
-              class="sm:p-10 p-5 bg-gray-50 sm:me-5 mb-10 rounded-md hover:shadow-md"
-            >
-              <h3 class="text-xl mb-5 font-bold">Issue Fixing</h3>
-              <p class="leading-10 text-gray-500 text-justify">
-                Offering dedicated issue-fixing services, I bring a meticulous
-                and solutions-oriented approach to address and resolve a wide
-                array of challenges that may arise in your digital landscape.
-                With a focus on efficiency and precision, I specialize in
-                diagnosing and remedying issues across web applications,
-                websites, and software systems.
-              </p>
-            </div>
-
-            <div
-              class="sm:p-10 p-5 bg-gray-50 sm:me-5 mb-10 rounded-md hover:shadow-md"
-            >
-              <h3 class="text-xl mb-5 font-bold">Server Management</h3>
-              <p class="leading-10 text-gray-500 text-justify">
-                Specializing in server management services, I offer a
-                comprehensive solution to ensure the seamless and secure
-                operation of your digital infrastructure. With expertise in
-                configuring, monitoring, and optimizing server environments, I
-                am committed to enhancing the reliability and performance of
-                your servers.
-              </p>
+      <TechCards client:only="react" />
+      <!-- tecnologies -->
+      <section class="lg:p-20 p-5 w-full" id="technologies">
+        <ParallaxSection client:load>
+          <div class="w-full mx-auto">
+            <h2 class="text-center text-4xl font-bold pb-10">Tecnologias</h2>
+            <div class="lg:columns-2 sm:columns-1 w-full">
+              <div
+                class="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full"
+              >
+                {
+                  technologyCards.map((tech) => (
+                    <WobbleCard
+                      client:only="react"
+                      containerClassName={tech.containerClassName}
+                    >
+                      <div class="max-w-lg">
+                        <h2 class="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                          {tech.title}
+                        </h2>
+                        <p class="mt-4 text-left text-base/6 text-zinc-300">
+                          {tech.description}
+                        </p>
+                      </div>
+                      <Image
+                        src={tech.image}
+                        width={500}
+                        height={500}
+                        alt={tech.alt}
+                        class={tech.imageClassName}
+                      />
+                    </WobbleCard>
+                  ))
+                }
+              </div>
             </div>
           </div>
-        </div>
-      </section> -->
-
-      <!-- portfolio -->
-      <section class="lg:p-20 p-5 w-full" id="portfolio">
-        <div class="w-full mx-auto">
-          <h2 class="text-center text-4xl font-bold pb-10">Tecnologies</h2>
-          <div class="lg:columns-2 sm:columns-1 w-full">
-            <div
-              class="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full"
-            >
-              <WobbleCard
-                containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
-                className=""
-              >
-                <div class="max-w-xs">
-                  <h2
-                    class="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white"
-                  >
-                    Gippity AI powers the entire universe
-                  </h2>
-                  <p class="mt-4 text-left text-base/6 text-neutral-200">
-                    With over 100,000 mothly active bot users, Gippity AI is the
-                    most popular AI platform for developers.
-                  </p>
-                </div>
-                <Image
-                  src="/linear.webp"
-                  width={500}
-                  height={500}
-                  alt="linear demo image"
-                  class="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
-                />
-              </WobbleCard>
-              <WobbleCard containerClassName="col-span-1 min-h-[300px]">
-                <h2
-                  class="max-w-80 text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white"
-                >
-                  No shirt, no shoes, no weapons.
-                </h2>
-                <p
-                  class="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200"
-                >
-                  If someone yells “stop!”, goes limp, or taps out, the fight is
-                  over.
-                </p>
-              </WobbleCard>
-              <WobbleCard
-                containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]"
-              >
-                <div class="max-w-sm">
-                  <h2
-                    class="max-w-sm md:max-w-lg text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white"
-                  >
-                    Signup for blazing-fast cutting-edge state of the art
-                    Gippity AI wrapper today!
-                  </h2>
-                  <p
-                    class="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200"
-                  >
-                    With over 100,000 mothly active bot users, Gippity AI is the
-                    most popular AI platform for developers.
-                  </p>
-                </div>
-                <Image
-                  src="/linear.webp"
-                  width={500}
-                  height={500}
-                  alt="linear demo image"
-                  class="absolute -right-10 md:-right-[40%] lg:-right-[20%] -bottom-10 object-contain rounded-2xl"
-                />
-              </WobbleCard>
-            </div>
-            <!-- <ThreeDCardDemo client:only="react" />
-            <ThreeDCardDemo client:only="react" />
-            <ThreeDCardDemo client:only="react" /> -->
-          </div>
-        </div>
+        </ParallaxSection>
       </section>
 
       <!-- portfolio -->
       <section class="lg:p-20 p-5" id="portfolio">
-        <div class="w-full mx-auto">
-          <h2 class="text-center text-4xl font-bold pb-10">Portfolio</h2>
-          <div class="lg:columns-3 md:columns-2 sm:columns-1 w-full">
-            <ThreeDCardDemo client:only="react" />
-            <ThreeDCardDemo client:only="react" />
-            <ThreeDCardDemo client:only="react" />
-            <!-- <ThreeDCardDemo client:only="react" /> -->
+        <ParallaxSection client:load>
+          <div class="w-full mx-auto">
+            <h2 class="text-center text-4xl font-bold pb-10">Portfolio</h2>
+            <PortifolioCard client:only="react" />
           </div>
-        </div>
+        </ParallaxSection>
       </section>
 
       <!-- section -->
       <section class="sm:p-20 p-5" id="contact">
-        <div class="sm:container mx-auto">
-          <h2 class="text-center text-4xl font-bold pb-10">Contact</h2>
-          <div class="w-full sm:flex">
-            <div class="sm:w-1/2 w-full">
-              <div class="mb-5">
-                <h3 class="text-xl">Email</h3>
-                <a
-                  class="text-gray-500"
-                  href="mailto:lucaspereiradesouzat@gmail.com"
-                  >lucaspereiradesouzat@gmail.com</a
-                >
-              </div>
-            </div>
-
-            <div class="sm:w-1/2 w-full bg-gray-50 p-10 rounded-md">
-              <form action="#">
-                <div class="mt-5 grid grid-cols-1 gap-y-8 sm:grid-cols-6">
-                  <div class="sm:col-span-4">
-                    <label
-                      for="username"
-                      class="block text-sm font-medium leading-6 text-gray-900"
-                      >Name</label
-                    >
-                    <input
-                      type="text"
-                      name="username"
-                      id="username"
-                      autocomplete="username"
-                      class="block w-full outline-1 border border-1 flex-1 bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
-                      placeholder="Rabiul Islam"
-                    />
-                  </div>
-                </div>
-
-                <div class="mt-5 grid grid-cols-1 gap-y-8 sm:grid-cols-6">
-                  <div class="sm:col-span-4">
-                    <label
-                      for="subject"
-                      class="block text-sm font-medium leading-6 text-gray-900"
-                      >Subject</label
-                    >
-                    <input
-                      type="text"
-                      name="subject"
-                      id="subject"
-                      autocomplete="subject"
-                      class="block w-full outline-1 border border-1 flex-1 bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
-                      placeholder="Hiring"
-                    />
-                  </div>
-                </div>
-
-                <div class="mt-5 grid grid-cols-1 gap-y-8 sm:grid-cols-6">
-                  <div class="sm:col-span-4">
-                    <label
-                      for="message"
-                      class="block text-sm font-medium leading-6 text-gray-900"
-                      >Message</label
-                    >
-                    <textarea
-                      name="message"
-                      id="message"
-                      autocomplete="message"
-                      class="block w-full outline-1 border border-1 flex-1 bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
-                      placeholder="Message"></textarea>
-                  </div>
-                </div>
-
-                <div class="mt-5 grid grid-cols-1 gap-y-8 sm:grid-cols-6">
+        <ParallaxSection client:load>
+          <div class="sm:container mx-auto">
+            <h2 class="text-center text-4xl font-bold pb-10">Contact</h2>
+            <div class="w-full sm:flex">
+              <div class="sm:w-1/2 w-full">
+                <div class="mb-5">
+                  <h3 class="text-xl">Email</h3>
                   <a
-                    href="#"
-                    class="bg-gray-200 mx-auto w-32 text-center rounded-md p-2 border border-1 border-gray-100 hover:bg-white"
-                    >Submit</a
+                    class="text-gray-500"
+                    href="mailto:lucaspereiradesouzat@gmail.com"
+                    >lucaspereiradesouzat@gmail.com</a
                   >
                 </div>
-              </form>
+                <div>
+                  <h3 class="text-xl mb-4">Social</h3>
+                  <ul class="flex flex-wrap gap-3">
+                    {
+                      socialLinks.map((social) => (
+                        <li>
+                          <a
+                            href={social.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex rounded-full border border-zinc-700 bg-zinc-900 px-4 py-2 text-sm text-zinc-200 transition-colors hover:bg-zinc-800 hover:text-white"
+                          >
+                            {social.label}
+                          </a>
+                        </li>
+                      ))
+                    }
+                  </ul>
+                </div>
+              </div>
+
+              <div class="sm:w-1/2 w-full bg-gray-50 p-10 rounded-md">
+                <form action="#">
+                  <div class="mt-5 grid grid-cols-1 gap-y-8 sm:grid-cols-6">
+                    <div class="sm:col-span-4">
+                      <label
+                        for="username"
+                        class="block text-sm font-medium leading-6 text-gray-900"
+                        >Name</label
+                      >
+                      <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        autocomplete="username"
+                        class="block w-full outline-1 border border-1 flex-1 bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                        placeholder="Rabiul Islam"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="mt-5 grid grid-cols-1 gap-y-8 sm:grid-cols-6">
+                    <div class="sm:col-span-4">
+                      <label
+                        for="subject"
+                        class="block text-sm font-medium leading-6 text-gray-900"
+                        >Subject</label
+                      >
+                      <input
+                        type="text"
+                        name="subject"
+                        id="subject"
+                        autocomplete="subject"
+                        class="block w-full outline-1 border border-1 flex-1 bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                        placeholder="Hiring"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="mt-5 grid grid-cols-1 gap-y-8 sm:grid-cols-6">
+                    <div class="sm:col-span-4">
+                      <label
+                        for="message"
+                        class="block text-sm font-medium leading-6 text-gray-900"
+                        >Message</label
+                      >
+                      <textarea
+                        name="message"
+                        id="message"
+                        autocomplete="message"
+                        class="block w-full outline-1 border border-1 flex-1 bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                        placeholder="Message"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="mt-5 grid grid-cols-1 gap-y-8 sm:grid-cols-6">
+                    <a
+                      href="#"
+                      class="bg-gray-200 mx-auto w-32 text-center rounded-md p-2 border border-1 border-gray-100 hover:bg-white"
+                      >Submit</a
+                    >
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
-        </div>
+        </ParallaxSection>
       </section>
     </main>
 
-    <footer class="bg-gray-50 lg:p-20 p-10">
+    <!-- <footer class="bg-gray-50 lg:p-20 p-10">
       <section class="container mx-auto">
         <div class="sm:grid justify-between sm:grid-cols-2 lg:grid-cols-4">
           <div class="flex gap-5 flex-col">
@@ -533,67 +479,8 @@ const someProps = {
           </div>
         </div>
       </section>
-    </footer>
+    </footer> -->
   </body>
 </Layout>
 
-<style>
-  main {
-    margin: auto;
-    padding: 1rem;
-    max-width: calc(100% - 2rem);
-    color: white;
-    font-size: 20px;
-    line-height: 1.6;
-  }
-  .astro-a {
-    position: absolute;
-    top: -32px;
-    left: 50%;
-    transform: translatex(-50%);
-    width: 220px;
-    height: auto;
-    z-index: -1;
-  }
-  h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    margin-bottom: 1em;
-  }
-  .text-gradient {
-    background-image: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 400%;
-    background-position: 0%;
-  }
-  .instructions {
-    margin-bottom: 2rem;
-    border: 1px solid rgba(var(--accent-light), 25%);
-    background: linear-gradient(
-      rgba(var(--accent-dark), 66%),
-      rgba(var(--accent-dark), 33%)
-    );
-    padding: 1.5rem;
-    border-radius: 8px;
-  }
-  .instructions code {
-    font-size: 0.8em;
-    font-weight: bold;
-    background: rgba(var(--accent-light), 12%);
-    color: rgb(var(--accent-light));
-    border-radius: 4px;
-    padding: 0.3em 0.4em;
-  }
-  .instructions strong {
-    color: rgb(var(--accent-light));
-  }
-  .link-card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-    gap: 2rem;
-    padding: 0;
-  }
-</style>
+<!-- <style></style> -->
