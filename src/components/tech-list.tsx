@@ -29,6 +29,7 @@ import {
 } from "lucide-react";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const technologies = [
   {
@@ -363,6 +364,7 @@ const categoryColors = {
 
 export default function TechCards() {
   const [isExpanded, setIsExpanded] = useState(false);
+  const { t } = useLanguage();
   const INITIAL_DISPLAY_COUNT = 6;
 
   const displayedTechnologies = isExpanded
@@ -375,10 +377,10 @@ export default function TechCards() {
       <div className="max-w-[80%] mx-auto mv-16">
         <div className="text-center mb-12">
           <h1 className="text-5xl font-bold bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent mb-6">
-            Tecnologias Modernas
+            {t.technologies.heading}
           </h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            Explore as principais tecnologias que tenho me aprofundado
+            {t.technologies.subtitle}
           </p>
         </div>
 
@@ -434,7 +436,7 @@ export default function TechCards() {
 
                       <div className="space-y-3">
                         <h4 className="font-semibold text-white text-sm group-hover:text-gray-100 transition-colors duration-300">
-                          Principais Características:
+                          {t.technologies.featuresLabel}
                         </h4>
                         <div className="flex flex-wrap gap-2">
                           {tech.features.map((feature, featureIndex) => (
@@ -487,8 +489,8 @@ export default function TechCards() {
               </motion.div>
               <span>
                 {isExpanded
-                  ? "Mostrar Menos"
-                  : `Mostrar Mais ${remainingCount} Tecnologias`}
+                  ? t.technologies.showLess
+                  : t.technologies.showMore.replace("{count}", String(remainingCount))}
               </span>
             </div>
           </motion.button>
