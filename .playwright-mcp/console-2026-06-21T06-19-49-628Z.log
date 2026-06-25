@@ -1,0 +1,28 @@
+[     278ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:4321/node_modules/.vite/deps/chunk-FZNE4JVR.js?v=0fdd1869:21608
+[     299ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4321/favicon.svg:0
+[     515ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4321/noise.webp:0
+[     537ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4321/noise.webp:0
+[    1093ms] [ERROR] Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR @ https://rabiulislam.dev/documents/images/portfolio/portfolio.png:0
+[    5400ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4321/linear.webp:0
+[    5592ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4321/linear.webp:0
+[  762442ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:4321/node_modules/.vite/deps/chunk-FZNE4JVR.js?v=754eb051:21608
+[  762447ms] Error: @vitejs/plugin-react can't detect preamble. Something is wrong.
+    at http://localhost:4321/src/i18n/LanguageContext.tsx:8:11
+[  867461ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:4321/node_modules/.vite/deps/chunk-FZNE4JVR.js?v=754eb051:21608
+[  867462ms] Error: @vitejs/plugin-react can't detect preamble. Something is wrong.
+    at http://localhost:4321/src/i18n/LanguageContext.tsx:8:11
+[  908400ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:4321/node_modules/.vite/deps/chunk-FZNE4JVR.js?v=754eb051:21608
+[  908403ms] Error: @vitejs/plugin-react can't detect preamble. Something is wrong.
+    at http://localhost:4321/src/i18n/LanguageContext.tsx:8:11
+[  909246ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:4321/node_modules/.vite/deps/chunk-FZNE4JVR.js?v=754eb051:21608
+[  909252ms] Error: @vitejs/plugin-react can't detect preamble. Something is wrong.
+    at http://localhost:4321/src/i18n/LanguageContext.tsx:8:11
+[  910034ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:4321/node_modules/.vite/deps/chunk-FZNE4JVR.js?v=754eb051:21608
+[  910037ms] Error: @vitejs/plugin-react can't detect preamble. Something is wrong.
+    at http://localhost:4321/src/i18n/LanguageContext.tsx:8:11
+[  910561ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:4321/node_modules/.vite/deps/chunk-FZNE4JVR.js?v=754eb051:21608
+[  910564ms] Error: @vitejs/plugin-react can't detect preamble. Something is wrong.
+    at http://localhost:4321/src/i18n/LanguageContext.tsx:8:11
+[  910786ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:4321/node_modules/.vite/deps/chunk-FZNE4JVR.js?v=754eb051:21608
+[  910788ms] Error: @vitejs/plugin-react can't detect preamble. Something is wrong.
+    at http://localhost:4321/src/i18n/LanguageContext.tsx:8:11

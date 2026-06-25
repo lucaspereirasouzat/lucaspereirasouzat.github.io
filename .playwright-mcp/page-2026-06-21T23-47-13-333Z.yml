@@ -1,0 +1,330 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner:
+      - generic [ref=e3]:
+        - navigation [ref=e4]:
+          - link "LS" [ref=e5] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e6]:
+            - button "Toggle language" [ref=e7] [cursor=pointer]: EN
+            - button "Toggle menu" [active] [ref=e8] [cursor=pointer]:
+              - img [ref=e420]
+        - list [ref=e424]:
+          - listitem [ref=e425]:
+            - link "Sobre" [ref=e426] [cursor=pointer]:
+              - /url: "#about"
+          - listitem [ref=e427]:
+            - link "Tecnologias" [ref=e428] [cursor=pointer]:
+              - /url: "#technologies"
+          - listitem [ref=e429]:
+            - link "Portfolio" [ref=e430] [cursor=pointer]:
+              - /url: "#portfolio"
+          - listitem [ref=e431]:
+            - link "Contato" [ref=e432] [cursor=pointer]:
+              - /url: "#contact"
+    - generic [ref=e16]:
+      - img "Lucas Pereira de Souza" [ref=e17]
+      - generic [ref=e21]:
+        - generic [ref=e22]: Lucas
+        - generic [ref=e23]: Pereira
+        - generic [ref=e24]: de
+        - generic [ref=e25]: Souza
+      - generic [ref=e29]:
+        - generic [ref=e30]: Construa
+        - generic [ref=e31]: apps
+        - generic [ref=e32]: incríveis
+        - generic [ref=e33]: com
+        - generic [ref=e34]: React.
+      - paragraph [ref=e36]: Desenvolvedor Full-Stack com experiência em React, Node.js e arquiteturas escaláveis.
+      - paragraph [ref=e37]: Desenvolvedor Full Stack Sênior (React, Node.js)
+      - generic [ref=e38]:
+        - link "Ver Portfolio" [ref=e39] [cursor=pointer]:
+          - /url: "#portfolio"
+        - link "Entrar em Contato" [ref=e40] [cursor=pointer]:
+          - /url: "#contact"
+    - main [ref=e41]:
+      - generic [ref=e44]:
+        - img "Lucas Pereira de Souza" [ref=e45]
+        - generic [ref=e46]:
+          - heading "Desenvolvedor Full Stack" [level=2] [ref=e47]
+          - paragraph [ref=e48]: Especialista em JavaScript e ecossistema moderno
+          - paragraph [ref=e49]: Sou Desenvolvedor Full-Stack, graduado em Análise de Sistemas, com ampla experiência em tecnologias modernas e um forte alinhamento com a filosofia de Código Aberto, tão valorizada pela comunidade tecnológica. Minha atuação está centrada na linguagem de programação JavaScript, com proficiência em frameworks e bibliotecas de destaque, como ReactJS, Next.js, React Native, AdonisJS e Express. Possuo conhecimentos em sistemas de mensageria distribuída com Kafka, automação de testes utilizando Jest, e orquestração de contêineres através de Kubernetes. Minha experiência se estende também ao uso de bancos de dados relacionais e não-relacionais, como Postgres, MongoDB e Redis, o que me permite lidar com diversas arquiteturas de armazenamento de dados. Além da prática técnica, sou um entusiasta de princípios de engenharia de software de alta qualidade, sendo familiar com as diretrizes apresentadas em obras consagradas como Clean Code, Domain-Driven Design (DDD) e Refatoração. Esses conhecimentos me capacitam a desenvolver soluções robustas, escaláveis e de fácil manutenção, sempre priorizando a clareza e a eficiência no código. Minha carreira é pautada por uma abordagem proativa e colaborativa, sempre em busca de excelência técnica e inovação.
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - heading "Tecnologias Modernas" [level=1] [ref=e53]
+          - paragraph [ref=e54]: Explore as principais tecnologias que tenho me aprofundado
+        - generic [ref=e55]:
+          - generic [ref=e57]:
+            - generic [ref=e58]:
+              - generic [ref=e60]:
+                - img [ref=e62]
+                - generic [ref=e66]: Frontend
+              - heading "React" [level=3] [ref=e67]
+              - generic [ref=e68]:
+                - img [ref=e69]
+                - generic [ref=e71]: ★★★★★
+            - generic [ref=e72]:
+              - paragraph [ref=e73]: Uma biblioteca JavaScript para construir interfaces de usuário interativas e componentes reutilizáveis.
+              - generic [ref=e74]:
+                - heading "Principais Características:" [level=4] [ref=e75]
+                - generic [ref=e76]:
+                  - generic [ref=e77]: Virtual DOM
+                  - generic [ref=e78]: Component-Based
+                  - generic [ref=e79]: JSX
+                  - generic [ref=e80]: Hooks
+          - generic [ref=e82]:
+            - generic [ref=e83]:
+              - generic [ref=e85]:
+                - img [ref=e87]
+                - generic [ref=e91]: Database
+              - heading "PostgreSQL" [level=3] [ref=e92]
+              - generic [ref=e93]:
+                - img [ref=e94]
+                - generic [ref=e96]: ★★★★★
+            - generic [ref=e97]:
+              - paragraph [ref=e98]: Sistema de gerenciamento de banco de dados relacional avançado, open-source e altamente extensível.
+              - generic [ref=e99]:
+                - heading "Principais Características:" [level=4] [ref=e100]
+                - generic [ref=e101]:
+                  - generic [ref=e102]: ACID Compliant
+                  - generic [ref=e103]: JSON Support
+                  - generic [ref=e104]: Extensions
+                  - generic [ref=e105]: Scalable
+          - generic [ref=e107]:
+            - generic [ref=e108]:
+              - generic [ref=e110]:
+                - img [ref=e112]
+                - generic [ref=e115]: Database
+              - heading "MongoDB" [level=3] [ref=e116]
+              - generic [ref=e117]:
+                - img [ref=e118]
+                - generic [ref=e120]: ★★★★☆
+            - generic [ref=e121]:
+              - paragraph [ref=e122]: Banco de dados NoSQL orientado a documentos, flexível e escalável para aplicações modernas.
+              - generic [ref=e123]:
+                - heading "Principais Características:" [level=4] [ref=e124]
+                - generic [ref=e125]:
+                  - generic [ref=e126]: Document-Based
+                  - generic [ref=e127]: Flexible Schema
+                  - generic [ref=e128]: Horizontal Scaling
+                  - generic [ref=e129]: Aggregation
+          - generic [ref=e131]:
+            - generic [ref=e132]:
+              - generic [ref=e134]:
+                - img [ref=e136]
+                - generic [ref=e138]: Messaging
+              - heading "Apache Kafka" [level=3] [ref=e139]
+              - generic [ref=e140]:
+                - img [ref=e141]
+                - generic [ref=e143]: ★★★★☆
+            - generic [ref=e144]:
+              - paragraph [ref=e145]: Plataforma de streaming distribuída para construir pipelines de dados em tempo real e aplicações de streaming.
+              - generic [ref=e146]:
+                - heading "Principais Características:" [level=4] [ref=e147]
+                - generic [ref=e148]:
+                  - generic [ref=e149]: High Throughput
+                  - generic [ref=e150]: Fault Tolerant
+                  - generic [ref=e151]: Real-time
+                  - generic [ref=e152]: Distributed
+          - generic [ref=e154]:
+            - generic [ref=e155]:
+              - generic [ref=e157]:
+                - img [ref=e159]
+                - generic [ref=e164]: Language
+              - heading "TypeScript" [level=3] [ref=e165]
+              - generic [ref=e166]:
+                - img [ref=e167]
+                - generic [ref=e169]: ★★★★★
+            - generic [ref=e170]:
+              - paragraph [ref=e171]: Superset do JavaScript que adiciona tipagem estática, melhorando a produtividade e qualidade do código.
+              - generic [ref=e172]:
+                - heading "Principais Características:" [level=4] [ref=e173]
+                - generic [ref=e174]:
+                  - generic [ref=e175]: Static Typing
+                  - generic [ref=e176]: IntelliSense
+                  - generic [ref=e177]: Compile-time Errors
+                  - generic [ref=e178]: Modern JS
+          - generic [ref=e180]:
+            - generic [ref=e181]:
+              - generic [ref=e183]:
+                - img [ref=e185]
+                - generic [ref=e189]: DevOps
+              - heading "Kubernetes" [level=3] [ref=e190]
+              - generic [ref=e191]:
+                - img [ref=e192]
+                - generic [ref=e194]: ★★★★☆
+            - generic [ref=e195]:
+              - paragraph [ref=e196]: Sistema de orquestração de containers que automatiza deployment, scaling e gerenciamento de aplicações.
+              - generic [ref=e197]:
+                - heading "Principais Características:" [level=4] [ref=e198]
+                - generic [ref=e199]:
+                  - generic [ref=e200]: Container Orchestration
+                  - generic [ref=e201]: Auto-scaling
+                  - generic [ref=e202]: Service Discovery
+                  - generic [ref=e203]: Rolling Updates
+        - button "Mostrar Mais 17 Tecnologias" [ref=e205] [cursor=pointer]:
+          - generic [ref=e207]:
+            - img [ref=e209]
+            - generic [ref=e211]: Mostrar Mais 17 Tecnologias
+      - generic [ref=e214]:
+        - heading "Tecnologias" [level=2] [ref=e215]
+        - generic [ref=e217]:
+          - generic [ref=e222]:
+            - heading "Frontend moderno" [level=2] [ref=e223]
+            - paragraph [ref=e224]: React, Next.js e TypeScript para interfaces performáticas, reutilizáveis e fáceis de evoluir.
+          - generic [ref=e229]:
+            - heading "Backend e integrações" [level=2] [ref=e230]
+            - paragraph [ref=e231]: Node.js, Express, Kafka e Redis para APIs robustas, mensageria e baixa latência em produção.
+          - generic [ref=e236]:
+            - heading "DevOps e qualidade" [level=2] [ref=e237]
+            - paragraph [ref=e238]: Docker, Kubernetes e Jest para pipeline confiável, deploy contínuo e qualidade de código consistente.
+      - generic [ref=e241]:
+        - heading "Portfolio" [level=2] [ref=e242]
+        - generic [ref=e243]:
+          - generic [ref=e244]:
+            - img "move.it" [ref=e246]
+            - generic [ref=e248]:
+              - heading "move.it" [level=3] [ref=e249]
+              - paragraph [ref=e250]: Aplicação Pomodoro com desafios cronometrados para produtividade, onde o usuário ganha XP ao completar desafios e avança de nível.
+            - generic [ref=e251]:
+              - generic [ref=e252]:
+                - generic [ref=e253]: Next.js
+                - generic [ref=e254]: React
+                - generic [ref=e255]: TypeScript
+                - generic [ref=e256]: Context API
+              - generic [ref=e257]:
+                - link "Código" [ref=e258] [cursor=pointer]:
+                  - /url: https://github.com/lucaspereirasouzat/nlwmoveitnext
+                  - img [ref=e259]
+                  - text: Código
+                - link "Website" [ref=e262] [cursor=pointer]:
+                  - /url: https://nlw-moveit-next-j9b8zt2yy-warmachine13.vercel.app
+                  - img [ref=e263]
+                  - text: Website
+          - generic [ref=e267]:
+            - img "Plataforma E-Commerce" [ref=e269]
+            - generic [ref=e271]:
+              - heading "Plataforma E-Commerce" [level=3] [ref=e272]
+              - paragraph [ref=e273]: Aplicação e-commerce full-stack com integração de pagamento, painel administrativo e gerenciamento de inventário em tempo real.
+            - generic [ref=e274]:
+              - generic [ref=e275]:
+                - generic [ref=e276]: React
+                - generic [ref=e277]: Node.js
+                - generic [ref=e278]: MongoDB
+                - generic [ref=e279]: Stripe
+              - generic [ref=e280]:
+                - link "Código" [ref=e281] [cursor=pointer]:
+                  - /url: https://github.com
+                  - img [ref=e282]
+                  - text: Código
+                - link "Website" [ref=e285] [cursor=pointer]:
+                  - /url: https://example.com
+                  - img [ref=e286]
+                  - text: Website
+          - generic [ref=e290]:
+            - img "App de Gerenciamento de Tarefas" [ref=e292]
+            - generic [ref=e294]:
+              - heading "App de Gerenciamento de Tarefas" [level=3] [ref=e295]
+              - paragraph [ref=e296]: Ferramenta colaborativa de gerenciamento de projetos com atualizações em tempo real, quadros drag-and-drop e chat em equipe.
+            - generic [ref=e297]:
+              - generic [ref=e298]:
+                - generic [ref=e299]: React
+                - generic [ref=e300]: TypeScript
+                - generic [ref=e301]: Socket.io
+                - generic [ref=e302]: PostgreSQL
+              - link "Código" [ref=e304] [cursor=pointer]:
+                - /url: https://github.com
+                - img [ref=e305]
+                - text: Código
+          - generic [ref=e308]:
+            - img "Assistente de Chat com IA" [ref=e310]
+            - generic [ref=e312]:
+              - heading "Assistente de Chat com IA" [level=3] [ref=e313]
+              - paragraph [ref=e314]: Aplicação de chat inteligente com API OpenAI, histórico de conversas e consciência de contexto.
+            - generic [ref=e315]:
+              - generic [ref=e316]:
+                - generic [ref=e317]: Next.js
+                - generic [ref=e318]: OpenAI
+                - generic [ref=e319]: Tailwind
+                - generic [ref=e320]: Prisma
+              - generic [ref=e321]:
+                - link "Código" [ref=e322] [cursor=pointer]:
+                  - /url: https://github.com
+                  - img [ref=e323]
+                  - text: Código
+                - link "Website" [ref=e326] [cursor=pointer]:
+                  - /url: https://example.com
+                  - img [ref=e327]
+                  - text: Website
+          - generic [ref=e331]:
+            - img "Rastreador Fitness" [ref=e333]
+            - generic [ref=e335]:
+              - heading "Rastreador Fitness" [level=3] [ref=e336]
+              - paragraph [ref=e337]: App de rastreamento fitness mobile-first com planos de treino, gráficos de progresso e recursos sociais.
+            - generic [ref=e338]:
+              - generic [ref=e339]:
+                - generic [ref=e340]: React Native
+                - generic [ref=e341]: Firebase
+                - generic [ref=e342]: Chart.js
+              - generic [ref=e343]:
+                - link "Código" [ref=e344] [cursor=pointer]:
+                  - /url: https://github.com
+                  - img [ref=e345]
+                  - text: Código
+                - link "Website" [ref=e348] [cursor=pointer]:
+                  - /url: https://example.com
+                  - img [ref=e349]
+                  - text: Website
+      - generic [ref=e355]:
+        - heading "Contato" [level=2] [ref=e356]
+        - paragraph [ref=e357]: Vamos conversar
+        - generic [ref=e358]:
+          - generic [ref=e359]:
+            - generic [ref=e360]:
+              - img [ref=e361]
+              - heading "Email" [level=3] [ref=e364]
+            - link "lucaspereiradesouzat@gmail.com" [ref=e365] [cursor=pointer]:
+              - /url: mailto:lucaspereiradesouzat@gmail.com
+          - generic [ref=e366]:
+            - heading "Social" [level=3] [ref=e367]
+            - list [ref=e368]:
+              - listitem [ref=e369]:
+                - link "Instagram" [ref=e370] [cursor=pointer]:
+                  - /url: https://instagram.com/lucaspereirasouzat
+                  - img [ref=e371]
+                  - text: Instagram
+              - listitem [ref=e374]:
+                - link "GitHub" [ref=e375] [cursor=pointer]:
+                  - /url: https://github.com/lucaspereirasouzat
+                  - img [ref=e376]
+                  - text: GitHub
+              - listitem [ref=e379]:
+                - link "LinkedIn" [ref=e380] [cursor=pointer]:
+                  - /url: https://linkedin.com/in/lucas-pereira-511292142
+                  - img [ref=e381]
+                  - text: LinkedIn
+              - listitem [ref=e385]:
+                - link "Facebook" [ref=e386] [cursor=pointer]:
+                  - /url: https://facebook.com/banasplit78
+                  - img [ref=e387]
+                  - text: Facebook
+              - listitem [ref=e389]:
+                - link "Email" [ref=e390] [cursor=pointer]:
+                  - /url: mailto:lucaspereiradesouzat@gmail.com
+                  - img [ref=e391]
+                  - text: Email
+  - generic [ref=e396]:
+    - button "Menu" [ref=e397]:
+      - img [ref=e399]
+      - generic: Menu
+    - button "Inspect" [ref=e403]:
+      - img [ref=e405]
+      - generic: Inspect
+    - button "Audit" [ref=e407]:
+      - generic [ref=e408]:
+        - img [ref=e409]
+        - img [ref=e433]
+      - generic: Audit
+    - button "Settings" [ref=e415]:
+      - img [ref=e417]
+      - generic: Settings
