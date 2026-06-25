@@ -1,0 +1,13 @@
+[     347ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:4321/node_modules/.vite/deps/chunk-FZNE4JVR.js?v=5a32f06c:21608
+[  285292ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:4321/@vite/client:1695
+[14270194ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:4321/node_modules/.vite/deps/chunk-FZNE4JVR.js?v=5a32f06c:21608
+[14270299ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://github.com/lucaspereirasouzat/nlwmoveitnext/raw/refs/heads/main/screenshots/image1.png:0
+[14270328ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://github.com/lucaspereirasouzat/nlwmoveitnext/raw/refs/heads/main/screenshots/image1.png:0
+[16663854ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:4321/@vite/client:1695
+[49505054ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:4321/node_modules/.vite/deps/chunk-FZNE4JVR.js?v=5a32f06c:21608
+[49505194ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://github.com/lucaspereirasouzat/nlwmoveitnext/raw/refs/heads/main/screenshots/image1.png:0
+[49505221ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://github.com/lucaspereirasouzat/nlwmoveitnext/raw/refs/heads/main/screenshots/image1.png:0
+[49509847ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:4321/@vite/client:1695
+[49509926ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:4321/node_modules/.vite/deps/chunk-FZNE4JVR.js?v=5a32f06c:21608
+[54189748ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://github.com/lucaspereirasouzat/nlwmoveitnext/raw/refs/heads/main/screenshots/image1.png:0
+[54189776ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://github.com/lucaspereirasouzat/nlwmoveitnext/raw/refs/heads/main/screenshots/image1.png:0

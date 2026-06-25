@@ -1,0 +1,36 @@
+[      75ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:4321/node_modules/.vite/deps/chunk-FZNE4JVR.js?v=754eb051:21608
+[      75ms] Error: @vitejs/plugin-react can't detect preamble. Something is wrong.
+    at http://localhost:4321/src/i18n/LanguageContext.tsx:8:11
+[    3741ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:4321/node_modules/.vite/deps/chunk-FZNE4JVR.js?v=754eb051:21608
+[    3742ms] Error: @vitejs/plugin-react can't detect preamble. Something is wrong.
+    at http://localhost:4321/src/i18n/LanguageContext.tsx:8:11
+[    4101ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:4321/node_modules/.vite/deps/chunk-FZNE4JVR.js?v=754eb051:21608
+[    4109ms] Error: @vitejs/plugin-react can't detect preamble. Something is wrong.
+    at http://localhost:4321/src/i18n/LanguageContext.tsx:8:11
+[    4345ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:4321/node_modules/.vite/deps/chunk-FZNE4JVR.js?v=754eb051:21608
+[    4345ms] Error: @vitejs/plugin-react can't detect preamble. Something is wrong.
+    at http://localhost:4321/src/i18n/LanguageContext.tsx:8:11
+[    4501ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:4321/node_modules/.vite/deps/chunk-FZNE4JVR.js?v=754eb051:21608
+[    4502ms] Error: @vitejs/plugin-react can't detect preamble. Something is wrong.
+    at http://localhost:4321/src/i18n/LanguageContext.tsx:8:11
+[    4674ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:4321/node_modules/.vite/deps/chunk-FZNE4JVR.js?v=754eb051:21608
+[    4674ms] Error: @vitejs/plugin-react can't detect preamble. Something is wrong.
+    at http://localhost:4321/src/i18n/LanguageContext.tsx:8:11
+[    4842ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:4321/node_modules/.vite/deps/chunk-FZNE4JVR.js?v=754eb051:21608
+[    4843ms] Error: @vitejs/plugin-react can't detect preamble. Something is wrong.
+    at http://localhost:4321/src/i18n/LanguageContext.tsx:8:11
+[   15495ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:4321/node_modules/.vite/deps/chunk-FZNE4JVR.js?v=754eb051:21608
+[   15496ms] Error: @vitejs/plugin-react can't detect preamble. Something is wrong.
+    at http://localhost:4321/src/i18n/LanguageContext.tsx:8:11
+[   16341ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4321/@id/@/components/PageWrapper:0
+[   16344ms] [ERROR] [astro-island] Error hydrating /@id/@/components/PageWrapper TypeError: Failed to fetch dynamically imported module: http://localhost:4321/@id/@/components/PageWrapper @ http://localhost:4321/lucaspereirasouzat:5053
+[   16415ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4321/@id/@/components/PageWrapper:0
+[   16416ms] [ERROR] [astro-island] Error hydrating /@id/@/components/PageWrapper TypeError: Failed to fetch dynamically imported module: http://localhost:4321/@id/@/components/PageWrapper @ http://localhost:4321/lucaspereirasouzat:5053
+[   16948ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4321/@id/@/components/PageWrapper:0
+[   16951ms] [ERROR] [astro-island] Error hydrating /@id/@/components/PageWrapper TypeError: Failed to fetch dynamically imported module: http://localhost:4321/@id/@/components/PageWrapper @ http://localhost:4321/lucaspereirasouzat:5053
+[   17415ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4321/@id/@/components/PageWrapper:0
+[   17418ms] [ERROR] [astro-island] Error hydrating /@id/@/components/PageWrapper TypeError: Failed to fetch dynamically imported module: http://localhost:4321/@id/@/components/PageWrapper @ http://localhost:4321/lucaspereirasouzat:5053
+[   17633ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4321/@id/@/components/PageWrapper:0
+[   17633ms] [ERROR] [astro-island] Error hydrating /@id/@/components/PageWrapper TypeError: Failed to fetch dynamically imported module: http://localhost:4321/@id/@/components/PageWrapper @ http://localhost:4321/lucaspereirasouzat:5053
+[   17818ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4321/@id/@/components/PageWrapper:0
+[   17820ms] [ERROR] [astro-island] Error hydrating /@id/@/components/PageWrapper TypeError: Failed to fetch dynamically imported module: http://localhost:4321/@id/@/components/PageWrapper @ http://localhost:4321/lucaspereirasouzat:5053

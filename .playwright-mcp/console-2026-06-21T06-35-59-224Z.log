@@ -1,0 +1,68 @@
+[     181ms] [ERROR] Warning: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem. @ http://localhost:4321/node_modules/.vite/deps/chunk-WHMHD7EJ.js?v=754eb051:135
+[     184ms] [ERROR] Warning: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem. @ http://localhost:4321/node_modules/.vite/deps/chunk-WHMHD7EJ.js?v=754eb051:135
+[     187ms] [ERROR] TypeError: Cannot read properties of null (reading 'useState')
+    at useState (http://localhost:4321/node_modules/.vite/deps/chunk-WHMHD7EJ.js?v=754eb051:1066:29)
+    at LanguageProvider (http://localhost:4321/src/i18n/LanguageContext.tsx:23:27)
+    at Nh (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:3246:11)
+    at Vk (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:6229:15)
+    at Uk (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:5923:15)
+    at Tk (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:5917:28)
+    at Ik (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:5902:11)
+    at Nk (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:5633:11)
+    at Gk (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:5569:55)
+    at J (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:97:21) @ http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:3769
+[     188ms] TypeError: Cannot read properties of null (reading 'useState')
+    at useState (http://localhost:4321/node_modules/.vite/deps/chunk-WHMHD7EJ.js?v=754eb051:1066:29)
+    at LanguageProvider (http://localhost:4321/src/i18n/LanguageContext.tsx:23:27)
+    at Nh (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:3246:11)
+    at Vk (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:6229:15)
+    at Uk (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:5923:15)
+    at Tk (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:5917:28)
+    at Ik (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:5902:11)
+    at Nk (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:5633:11)
+    at Gk (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:5569:55)
+    at J (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:97:21)
+[    7753ms] [ERROR] Warning: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem. @ http://localhost:4321/node_modules/.vite/deps/chunk-WHMHD7EJ.js?v=754eb051:135
+[    7754ms] [ERROR] Warning: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem. @ http://localhost:4321/node_modules/.vite/deps/chunk-WHMHD7EJ.js?v=754eb051:135
+[    7754ms] [ERROR] TypeError: Cannot read properties of null (reading 'useState')
+    at useState (http://localhost:4321/node_modules/.vite/deps/chunk-WHMHD7EJ.js?v=754eb051:1066:29)
+    at LanguageProvider (http://localhost:4321/src/i18n/LanguageContext.tsx:23:27)
+    at Nh (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:3246:11)
+    at Vk (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:6229:15)
+    at Uk (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:5923:15)
+    at Tk (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:5917:28)
+    at Ik (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:5902:11)
+    at Nk (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:5633:11)
+    at Gk (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:5569:55)
+    at J (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:97:21) @ http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:3769
+[    7755ms] TypeError: Cannot read properties of null (reading 'useState')
+    at useState (http://localhost:4321/node_modules/.vite/deps/chunk-WHMHD7EJ.js?v=754eb051:1066:29)
+    at LanguageProvider (http://localhost:4321/src/i18n/LanguageContext.tsx:23:27)
+    at Nh (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:3246:11)
+    at Vk (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:6229:15)
+    at Uk (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:5923:15)
+    at Tk (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:5917:28)
+    at Ik (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:5902:11)
+    at Nk (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:5633:11)
+    at Gk (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:5569:55)
+    at J (http://localhost:4321/node_modules/.vite/deps/chunk-V2HP67RT.js?v=754eb051:97:21)
+[   32158ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:4321/@vite/client:1695
+[   32160ms] [ERROR] WebSocket connection to 'ws://localhost:4321/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4321/@vite/client:1766
+[   33281ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:4321/node_modules/.vite/deps/chunk-FZNE4JVR.js?v=f787bcd4:21608
+[   33440ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4321/lucaspereirasouzatnoise.webp:0
