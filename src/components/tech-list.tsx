@@ -362,9 +362,54 @@ const categoryColors = {
   Security: "bg-emerald-950 text-emerald-200 border-emerald-800",
 };
 
+const technologyDescriptionsEn: Record<string, string> = {
+  React:
+    "A JavaScript library for building interactive user interfaces and reusable components.",
+  PostgreSQL:
+    "An advanced, open-source, and highly extensible relational database management system.",
+  MongoDB:
+    "A document-oriented NoSQL database that is flexible and scalable for modern applications.",
+  "Apache Kafka":
+    "A distributed streaming platform for building real-time data pipelines and streaming applications.",
+  TypeScript:
+    "A JavaScript superset that adds static typing to improve developer productivity and code quality.",
+  Kubernetes:
+    "A container orchestration system that automates deployment, scaling, and application management.",
+  "Next.js":
+    "A full-stack React framework with server-side rendering, file-based routing, and built-in optimizations.",
+  Redis:
+    "An ultra-fast in-memory data structure store used as a cache, message broker, and database.",
+  "Express.js":
+    "A minimalist and flexible web framework for Node.js, ideal for building APIs and web applications.",
+  RabbitMQ:
+    "A robust message broker implementing AMQP, ideal for asynchronous communication between services.",
+  Jest: "A JavaScript testing framework focused on simplicity, with mocking, coverage, and snapshot support.",
+  Lodash:
+    "A JavaScript utility library that provides functions for working with arrays, objects, and strings.",
+  Axios:
+    "A Promise-based HTTP client for Node.js and browsers with interceptors and response transformations.",
+  "Socket.io":
+    "A library for real-time client-server communication using WebSockets and fallback transports.",
+  Docker:
+    "A containerization platform that packages applications and their dependencies into portable containers.",
+  "React Native":
+    "A framework for cross-platform mobile development using React and native capabilities.",
+  Git: "A distributed version control system for tracking code changes and enabling team collaboration.",
+  gRPC: "A high-performance RPC framework that uses Protocol Buffers for service-to-service communication.",
+  "Artificial Intelligence":
+    "AI technologies including Machine Learning, Deep Learning, and natural language processing.",
+  Jenkins:
+    "An open-source automation server for CI/CD, streamlining continuous integration and deployment.",
+  Elasticsearch:
+    "A distributed search and analytics engine, ideal for real-time search and big data analysis.",
+  Keycloak:
+    "An open-source identity and access management solution with SSO and robust authentication.",
+  Kong: "A high-performance API Gateway for managing, monitoring, and securing APIs and microservices.",
+};
+
 export default function TechCards() {
   const [isExpanded, setIsExpanded] = useState(false);
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const INITIAL_DISPLAY_COUNT = 6;
 
   const displayedTechnologies = isExpanded
@@ -388,6 +433,11 @@ export default function TechCards() {
           <AnimatePresence mode="popLayout">
             {displayedTechnologies.map((tech, index) => {
               const IconComponent = tech.icon;
+              const localizedDescription =
+                lang === "en"
+                  ? (technologyDescriptionsEn[tech.name] ?? tech.description)
+                  : tech.description;
+
               return (
                 <motion.div
                   key={tech.name}
@@ -431,7 +481,7 @@ export default function TechCards() {
                     </CardHeader>
                     <CardContent className="relative">
                       <CardDescription className="text-gray-400 mb-4 leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
-                        {tech.description}
+                        {localizedDescription}
                       </CardDescription>
 
                       <div className="space-y-3">
@@ -490,7 +540,10 @@ export default function TechCards() {
               <span>
                 {isExpanded
                   ? t.technologies.showLess
-                  : t.technologies.showMore.replace("{count}", String(remainingCount))}
+                  : t.technologies.showMore.replace(
+                      "{count}",
+                      String(remainingCount),
+                    )}
               </span>
             </div>
           </motion.button>
