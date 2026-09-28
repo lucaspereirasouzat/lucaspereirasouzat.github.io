@@ -4,6 +4,9 @@
 # generated types
 .astro/
 
+# Vercel Build Output API artifacts
+.vercel/
+
 # dependencies
 node_modules/
 
