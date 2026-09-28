@@ -36,5 +36,11 @@ export default {
         "Mobile-first fitness tracking app with workout plans, progress charts and social features.",
       tags: ["React Native", "Firebase", "Chart.js"],
     },
+    {
+      title: "GlucoMetric",
+      description:
+        "Smart diabetes management platform for glucose monitoring, meal logging, and trend tracking.",
+      tags: ["HealthTech", "Monitoring", "Analytics"],
+    },
   ],
 };
