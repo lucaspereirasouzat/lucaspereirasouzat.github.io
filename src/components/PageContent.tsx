@@ -18,7 +18,7 @@ import {
   X,
 } from "lucide-react";
 
-const PROFILE_PHOTO = `${import.meta.env.BASE_URL}/profile.jpg`;
+const PROFILE_PHOTO = `${import.meta.env.BASE_URL}profile.jpg`;
 
 const socialLinks = [
   {
