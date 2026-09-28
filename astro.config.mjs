@@ -2,10 +2,15 @@ import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
 import react from '@astrojs/react';
 import path from 'path';
-export default defineConfig({
-  site: "https://lucaspereirasouzat.github.io",
-  base: "lucaspereirasouzat",
+import vercel from '@astrojs/vercel';
 
+export default defineConfig({
+  output: 'server',
+  adapter: vercel({
+    webAnalytics: {
+      enabled: false,
+    },
+  }),
   integrations: [
     tailwind(),
     react({

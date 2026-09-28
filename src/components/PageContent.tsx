@@ -18,7 +18,7 @@ import {
   X,
 } from "lucide-react";
 
-const PROFILE_PHOTO = `${import.meta.env.BASE_URL}/profile.jpg`;
+const PROFILE_PHOTO = `${import.meta.env.BASE_URL}profile.jpg`;
 
 const socialLinks = [
   {
@@ -26,7 +26,11 @@ const socialLinks = [
     href: "https://instagram.com/lucaspereirasouzat",
     icon: Instagram,
   },
-  { label: "GitHub", href: "https://github.com/lucaspereirasouzat", icon: Github },
+  {
+    label: "GitHub",
+    href: "https://github.com/lucaspereirasouzat",
+    icon: Github,
+  },
   {
     label: "LinkedIn",
     href: "https://linkedin.com/in/lucas-pereira-511292142",
@@ -209,7 +213,10 @@ export default function PageContent() {
       {/* Main */}
       <main className="w-full">
         {/* About */}
-        <section id="about" className="bg-black shadow-xl w-full p-10">
+        <section
+          id="about"
+          className="bg-black shadow-xl w-full p-10 scroll-mt-24"
+        >
           <ParallaxSection>
             <div className="max-w-5xl mx-auto flex flex-col sm:flex-row gap-10 items-start">
               <img
@@ -218,12 +225,10 @@ export default function PageContent() {
                 className="w-64 h-64 rounded-2xl object-cover shrink-0 shadow-xl"
               />
               <div>
-                <h2 className="text-bold text-2xl mb-3 text-white">
+                <h2 className="font-bold text-2xl mb-3 text-white">
                   {t.about.title}
                 </h2>
-                <p className="mb-5 text-sm text-gray-400">
-                  {t.about.subtitle}
-                </p>
+                <p className="mb-5 text-sm text-gray-400">{t.about.subtitle}</p>
                 <p className="text-gray-500 text-justify leading-10">
                   {t.about.bio}
                 </p>
@@ -236,7 +241,7 @@ export default function PageContent() {
         <TechCards />
 
         {/* Technologies WobbleCards */}
-        <section className="lg:p-20 p-5 w-full" id="technologies">
+        <section className="lg:p-20 p-5 w-full scroll-mt-24" id="technologies">
           <ParallaxSection>
             <div className="w-full mx-auto">
               <h2 className="text-center text-4xl font-bold pb-10">
@@ -266,7 +271,7 @@ export default function PageContent() {
         </section>
 
         {/* Portfolio */}
-        <section className="lg:p-20 p-5" id="portfolio">
+        <section className="lg:p-20 p-5 scroll-mt-24" id="portfolio">
           <ParallaxSection>
             <div className="w-full mx-auto">
               <h2 className="text-center text-4xl font-bold pb-10">
@@ -278,7 +283,7 @@ export default function PageContent() {
         </section>
 
         {/* Contact */}
-        <section className="sm:p-20 p-5" id="contact">
+        <section className="sm:p-20 p-5 scroll-mt-24" id="contact">
           <ParallaxSection>
             <div className="sm:container mx-auto">
               <h2 className="text-center text-4xl font-bold pb-4">

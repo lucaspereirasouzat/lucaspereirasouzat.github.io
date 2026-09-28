@@ -40,7 +40,7 @@ export const TypewriterEffect = ({
           duration: 0.3,
           delay: stagger(0.1),
           ease: "easeInOut",
-        }
+        },
       );
     }
   }, [isInView]);
@@ -73,7 +73,7 @@ export const TypewriterEffect = ({
           duration: 0.3,
           delay: stagger(0.1),
           ease: "easeInOut",
-        }
+        },
       );
     }
   }, [currentRotationIndex, isInView]);
@@ -95,7 +95,7 @@ export const TypewriterEffect = ({
                   key={`char-${index}`}
                   className={cn(
                     `dark:text-white text-black opacity-0 hidden`,
-                    word.className
+                    word.className,
                   )}
                 >
                   {char}
@@ -112,7 +112,7 @@ export const TypewriterEffect = ({
     <div
       className={cn(
         "text-base sm:text-xl md:text-3xl lg:text-5xl font-bold text-center",
-        className
+        className,
       )}
     >
       {renderWords()}
@@ -130,7 +130,7 @@ export const TypewriterEffect = ({
         }}
         className={cn(
           "inline-block rounded-sm w-[4px] h-4 md:h-6 lg:h-10 bg-blue-500",
-          cursorClassName
+          cursorClassName,
         )}
       ></motion.span>
     </div>
@@ -155,12 +155,14 @@ export const TypewriterEffectSmooth = ({
   lastColors?: string[];
   intervalMs?: number;
 }) => {
-  const rotationOptions = lastOptions && lastOptions.length > 0
-    ? lastOptions
-    : [words[words.length - 1]?.text ?? ""];
-  const colors = lastColors && lastColors.length > 0
-    ? lastColors
-    : rotationOptions.map(() => "text-blue-500");
+  const rotationOptions =
+    lastOptions && lastOptions.length > 0
+      ? lastOptions
+      : [words[words.length - 1]?.text ?? ""];
+  const colors =
+    lastColors && lastColors.length > 0
+      ? lastColors
+      : rotationOptions.map(() => "text-blue-500");
 
   const [wordIndex, setWordIndex] = useState(0);
   const [displayed, setDisplayed] = useState(rotationOptions[0]);
@@ -241,13 +243,13 @@ export const TypewriterEffectSmooth = ({
   return (
     <div className={cn("flex space-x-1 my-6", className)}>
       <motion.div
-        className="overflow-hidden"
-        initial={{ width: "0%" }}
-        whileInView={{ width: "fit-content" }}
-        transition={{ duration: 2, ease: "linear", delay: 1 }}
+        initial={{ opacity: 0, y: 8 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.6 }}
+        transition={{ duration: 0.45, ease: "easeOut", delay: 0.2 }}
       >
         <div
-          className="text-xs sm:text-base md:text-xl lg:text:3xl xl:text-5xl font-bold"
+          className="text-xs sm:text-base md:text-xl lg:text-3xl xl:text-5xl font-bold"
           style={{ whiteSpace: "nowrap" }}
         >
           {renderWords()}
@@ -263,7 +265,7 @@ export const TypewriterEffectSmooth = ({
         }}
         className={cn(
           "block rounded-sm w-[4px]  h-4 sm:h-6 xl:h-12 bg-blue-500",
-          cursorClassName
+          cursorClassName,
         )}
       ></motion.span>
     </div>

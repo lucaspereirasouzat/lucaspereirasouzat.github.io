@@ -15,6 +15,7 @@ const projectImages = [
     "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
     "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
     "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=600&h=400&fit=crop",
+    "/projects/diabetes-tracker.png",
 ];
 
 const projectLinks: { github?: string; website?: string }[] = [
@@ -23,6 +24,7 @@ const projectLinks: { github?: string; website?: string }[] = [
     { github: "https://github.com" },
     { github: "https://github.com", website: "https://example.com" },
     { github: "https://github.com", website: "https://example.com" },
+    { website: "https://diabetes-tracker-gamma.vercel.app/" },
 ];
 
 function PortifolioCardItem({

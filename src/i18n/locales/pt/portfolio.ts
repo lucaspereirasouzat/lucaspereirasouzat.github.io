@@ -35,5 +35,11 @@ export default {
         "App de rastreamento fitness mobile-first com planos de treino, gráficos de progresso e recursos sociais.",
       tags: ["React Native", "Firebase", "Chart.js"],
     },
+    {
+      title: "GlucoMetric",
+      description:
+        "Plataforma inteligente para controle do diabetes, com monitoramento de glicemia, registro de refeições e acompanhamento de tendências.",
+      tags: ["HealthTech", "Monitoramento", "Analytics"],
+    },
   ],
 };
